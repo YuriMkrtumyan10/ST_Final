@@ -1,14 +1,12 @@
 package pages.base;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.function.Function;
+import java.time.Duration;
 
 public class BasePage {
 
@@ -17,11 +15,10 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 0);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
     public WebElement getElement(By locator) {
-        return wait.until((Function<? super WebDriver, WebElement>) ExpectedConditions.visibilityOfElementLocated(locator));
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
-
 
 }

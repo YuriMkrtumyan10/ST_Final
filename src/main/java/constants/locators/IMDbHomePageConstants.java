@@ -1,8 +1,11 @@
 package constants.locators;
 
 
-import org.openqa.selenium.By;
-
 public class IMDbHomePageConstants {
-    public static final String LOGIN_BUTTON = ("body.format-site.course.path-site.chrome.dir-ltr.lang-en.yui-skin-sam.yui3-skin-sam.elearning-aua-am.pagelayout-frontpage.course-1.context-2.notloggedin.jsenabled:nth-child(7) div.d-print-block:nth-child(1) nav.fixed-top.navbar.navbar-bootswatch.navbar-expand.moodle-has-zindex:nth-child(7) ul.nav.navbar-nav.ml-auto li.nav-item.d-flex.align-items-center:nth-child(3) div.usermenu span.login > a:nth-child(1)");
+    public static final String TITLE = "Wildberries – Интернет-магазин модной одежды и обуви";
+    public static final String SEARCH_FIELD_ID = "searchInput";
+    public static final String SEARCH_BUTTON_ID = "//*[@id=\"applySearchBtn\"]";
+    public static final String CART_ICON = "/html[1]/body[1]/div[1]/header[1]/div[1]/div[2]/div[2]/div[3]/a[1]";
+
+
 }

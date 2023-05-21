@@ -2,12 +2,8 @@ package constants.messages;
 
 public class AssertionMessages {
 
-    public static final String LOGIN_ERROR_MESSAGE = "Invalid login, please try again";
-    public static final String LOGIN_SUCCESS_MESSAGE = "Correct login credentials";
-    public static final String BUTTON_VISIBILITY_ERROR = "NO BUTTON DETECTED";
-    public static final String BUTTON_VISIBILITY_SUCCESS = "THE BUTTON DETECTED";
-    public static final String IMAGE_REVEAL_SUCCESS = "IMAGE WAS DETECTED";
+    public static final String SEARCH_ERROR_MESSAGE = "Попробуйте поискать по-другому или сократить запрос";
 
-
+    public static final String EMPTY_CART_MESSAGE = "В корзине пока пусто";
 
 }
